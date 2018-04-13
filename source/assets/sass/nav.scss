@@ -20,24 +20,46 @@
  * SOFTWARE.
  */
 
-$base-font-weight: 400 !default;
-$base-font-size: 16px !default;
-$base-line-height-ratio: 1.5 !default;
-$base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+nav {
+  @include media-breakpoint-down(md) {
+    transition: background-color 100ms linear;
+  }
 
-$text-color:       #111 !default;
-$background-color: #fdfdfd !default;
+  @include media-breakpoint-up(md) {
+    padding: 5px 0;
+  }
+}
 
-$primary-color: #cd585d !default;
+nav .navbar-brand-logo {
+  width: 50px;
+  height: 50px;
+}
 
-// Grid breakpoints (from Bootstrap definitions)
-//
-// Define the minimum dimensions at which your layout will change,
-// adapting to different screen sizes, for use in media queries.
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px
-) !default;
+nav .navbar-toggler {
+  color: rgba(0,0,0,.5);
+  border-color: rgba(0,0,0,.1);
+}
+
+nav .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  width: 20px;
+  height: 20px;
+}
+
+nav .navbar-nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+nav .navbar-nav li a {
+  letter-spacing: 1px;
+  color: #222;
+  transition: all ease .35s;
+}
+
+nav .navbar-nav li a:hover,
+nav .navbar-nav li a:focus {
+  outline: 0;
+  color: $primary-color;
+}

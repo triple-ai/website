@@ -20,24 +20,12 @@
  * SOFTWARE.
  */
 
-$base-font-weight: 400 !default;
-$base-font-size: 16px !default;
-$base-line-height-ratio: 1.5 !default;
-$base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+// Closes the responsive menu on toggler click.
+$('.navbar-collapse ul li a').click(function() {
+  $('.navbar-toggler:visible').click();
+});
 
-$text-color:       #111 !default;
-$background-color: #fdfdfd !default;
-
-$primary-color: #cd585d !default;
-
-// Grid breakpoints (from Bootstrap definitions)
-//
-// Define the minimum dimensions at which your layout will change,
-// adapting to different screen sizes, for use in media queries.
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px
-) !default;
+// Change nav menu background on toggler click.
+$('.navbar-toggler').click(function() {
+  $('.navbar').toggleClass('bg-light');
+});
