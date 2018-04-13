@@ -78,3 +78,11 @@ $(function() {
     event.preventDefault();
   });
 });
+
+// Enable Bootstrap Scrollspy feature to highlight the current active nav item in nav bar as
+// scrolling.
+//
+// See https://getbootstrap.com/docs/4.0/components/scrollspy/.
+$('body').scrollspy({
+  target: '.navbar',
+});

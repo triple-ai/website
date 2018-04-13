@@ -77,3 +77,10 @@ nav.navbar-onscroll .navbar-brand-logo {
   width: 30px;
   height: 30px;
 }
+
+nav .navbar-nav > li > a.active,
+nav .navbar-nav > li > a.active:hover {
+  border-radius: 5px;
+  color: #fff;
+  background-color: $primary-color;
+}
