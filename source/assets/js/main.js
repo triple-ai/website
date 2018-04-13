@@ -59,3 +59,22 @@ $(function() {
 
   init();
 });
+
+// jQuery for page scrolling feature
+$(function() {
+  const navbarHeight = $('.navbar').height();
+
+  $('a.page-scroll').bind('click', function(event) {
+    const anchor = $(this);
+
+    let scrollTop = 0;
+    if (anchor.attr('href') != '#page-top') {
+      scrollTop = $(anchor.attr('href')).offset().top - navbarHeight;
+    }
+
+    $('html, body').stop().animate({
+      scrollTop: scrollTop,
+    }, 1500);
+    event.preventDefault();
+  });
+});
