@@ -29,3 +29,33 @@ $('.navbar-collapse ul li a').click(function() {
 $('.navbar-toggler').click(function() {
   $('.navbar').toggleClass('bg-light');
 });
+
+// Change navbar when it reaches the intro text.
+$(function() {
+  const docElem = document.documentElement;
+  const navbar = $('.navbar');
+  const changeNavbarOn = $('header .intro-lead-in').offset().top - navbar.height();
+
+  let didScroll = false;
+
+  function init() {
+    window.addEventListener('scroll', function(event) {
+      if(!didScroll) {
+        didScroll = true;
+        setTimeout(scrollPage, 250);
+      }
+    }, false);
+  }
+
+  function scrollPage() {
+    var sy = window.pageYOffset || docElem.scrollTop;
+    if (sy >= changeNavbarOn) {
+      navbar.addClass('navbar-onscroll');
+    } else {
+      navbar.removeClass('navbar-onscroll');
+    }
+    didScroll = false;
+  }
+
+  init();
+});

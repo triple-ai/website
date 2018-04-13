@@ -30,9 +30,14 @@ nav {
   }
 }
 
+nav .navbar-brand {
+  transition: all ease .35s;
+}
+
 nav .navbar-brand-logo {
   width: 50px;
   height: 50px;
+  transition: all ease .35s;
 }
 
 nav .navbar-toggler {
@@ -62,4 +67,13 @@ nav .navbar-nav li a:hover,
 nav .navbar-nav li a:focus {
   outline: 0;
   color: $primary-color;
+}
+
+nav.navbar-onscroll {
+  background-color: #fff;
+}
+
+nav.navbar-onscroll .navbar-brand-logo {
+  width: 30px;
+  height: 30px;
 }
