@@ -46,3 +46,10 @@ exclude:
 # Plugin settings
 plugins:
   - jekyll-seo-tag
+
+# Facebook customer chat plugin settings
+fb_customer_chat:
+  page_id: 108976382935124
+  theme_color: "#cd585d"
+  logged_in_greeting: "有什麼是我可以為您服務的地方嗎?"
+  logged_out_greeting: "有什麼是我可以為您服務的地方嗎?"
