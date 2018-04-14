@@ -25,6 +25,7 @@ description: >-
   即時的回覆，精準的問答，Chatbot 讓客服不再是難題
 baseurl: ""
 url: "https://triple-ai.com"
+google_tag_manager: GTM-M75GQ4M
 
 # Markdown settings
 markdown: kramdown
