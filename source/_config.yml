@@ -39,7 +39,6 @@ style: :compressed
 # Build settings
 incremental: true
 exclude:
-  - Gemfile
   - README.md
   - assets/sass
 
