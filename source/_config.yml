@@ -33,14 +33,14 @@ markdown: kramdown
 # Sass settings
 sass:
   add_charset: true
-  sass_dir: assets/sass
+  sass_dir: sass
 style: :compressed
 
 # Build settings
 incremental: true
 exclude:
   - README.md
-  - assets/sass
+  - sass
 
 # Plugin settings
 plugins:
