@@ -45,6 +45,7 @@ exclude:
 # Plugin settings
 plugins:
   - jekyll-seo-tag
+  - jekyll-assets
 
 # Facebook customer chat plugin settings
 fb_customer_chat:
