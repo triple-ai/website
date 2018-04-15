@@ -47,6 +47,12 @@ plugins:
   - jekyll-seo-tag
   - jekyll-assets
 
+# Assets
+assets:
+  sources:
+    - assets
+    - sass
+
 # Facebook customer chat plugin settings
 fb_customer_chat:
   page_id: 108976382935124
