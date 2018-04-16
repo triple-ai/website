@@ -20,6 +20,9 @@
  * SOFTWARE.
  */
 
+// Load Noto Sans TC fonts.
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
 body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height-ratio} $base-font-family;
   color: $text-color;
